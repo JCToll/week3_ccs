@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>Joel Tollefson's Heritage </title>
+  
+   <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
     
 <body>
+     <!-- add horizontal navigation bar  to link to the 4 main web pagess 
+                and, make current page "active" -->
+  <nav>
+    <ul class= "nav">
+      <li class="nav"><a class= "active" href="index.html">Home</a>  </li>   
+      <li class="nav"><a href="norwegian_heritage.html">Norwegian Heritage</a> </li>
+      <li class="nav"><a href="brazilian_heritage.html">Brazilian Heritage</a></li>
+      <li class="nav"><a href="american_heritage.html">American Heritage</a></li>
+    </ul>
+
+  </nav>
 
  <!-- start with main intro in the "sections"-->  
   <section>
@@ -14,50 +27,35 @@
     <p>Often when people meet me, they ask, "Where are you from?" Such a simple question... and yet, I always hesitate to answer - it's complicated.   </p>
     <p>I start by stating, "...well, I was born and grew up in Brazil - ", and I get no further when I am interrupted with, "What? No way!  With a name like Tollefson, <i>how can you be Brazilian?</i>" </p>
     <p>And then it starts... I explain that actually, my grandparents are from Norway, my parents grew up in Seattle, but moved to Brazil where I was born. I then returned to Seattle for college where I have since lived.  It get's complicated.  </p>
-    <b>Norway, USA</b>, and <b>Brazil</b> are the cornerstones of my heritage. Just as a cornerstone defines the foundation that joins walls, these countries are the cornerstones that join my heritage. These cornerstones define who I am.  
+    <p> <b>Norway, USA, and Brazil</b> are the cornerstones of my heritage. Just as a cornerstone defines the foundation that joins walls, these countries are the cornerstones that join my heritage. These cornerstones define who I am. </p> 
   </section>
-  <p>  <img src="../images/WorldMap.JPG" alt="Map: Norway - USA - Brazil" style="float:left;width:426px;height:321px;"> </p>
-  <p></p>
-  <p></p>
+  <p>  <img src="images/worldmap.jpg" alt="Map: Norway - USA - Brazil" style="float:left;width:480px;height:361px;"> </p>
+
   
   <!-- add an aside to support the main sections  -->
-  <aside>
-    <p>.</p>
-    <p>.</p>
-    <p>.</p>
-    <H4><b>cor·ner·stone</b> [<i>kôrnərˌstōn</i>] </H4>
-    <p>noun: cornerstone; plural noun: cornerstones</p>
+  <aside class= "asidebox">
+    <h4>cor·ner·stone [<em>kôrnərˌstōn</em>] </h4>
+    <p class="nominal">noun: cornerstone; plural noun: cornerstones</p>
     <ol>
       <li>a stone that forms the base of a corner of a building, joining two walls.</li>
       <li>an important quality or feature on which a particular thing depends or is based. </li>
-
-      <p><i>example:</i> "a national minimum wage remained the cornerstone of policy" </p>
-      <p><i>synonyms:</i> foundation, basis, keystone, mainspring, mainstay, linchpin, bedrock, base, backbone, key, centerpiece, core, heart, center, crux </p>
     </ol> 
-  </aside>
-   <p>.</p>
-   <p>.</p>
-      
-   <!-- add navigation to link to the 3 main supporting html pages; future: add to left frame   -->
-  <nav>
-      <p>My Heritage Web Pages:</p>
-      <p><a href="norwegian_heritage.html">Norwegian Heritage Page</a></p>
-      <p><a href="brazilian_heritage.html">Brazilian Heritage Page</a> </p>
-      <p><a href="american_heritage.html">American Heritage Page</a> </p>
-  </nav>
-  
-<hr>
+      <p class="nominal"><i>example:</i> "a national minimum wage remained the cornerstone of policy" </p>
+      <p class="nominal"><i>synonyms:</i> foundation, basis, keystone, mainspring, mainstay, linchpin, bedrock, base, backbone, key, centerpiece, core, heart, center, crux </p>
 
-<!-- add a common footer that is common to all pages -->
-<footer>
+  </aside>
+
+
+<!-- add a common footer that is common to all pages; needs to go to the bottom -->
+<div class="footer">
   <details>
     <summary>&copy; 2017 || Posted by: Joel Tollefson</summary>
     <p>Posted by: Joel Tollefson</p>
     <p>Contact information: <a href="mailto:Joel.Tollefson@gmail.com">
         Joel.Tollefson@gmail.com</a>  </p>
-    <time datetime="2017-10-13">Revision date.</time> <!-- not sure how datetime works -->
+    <time datetime="2017-10-28">Revision date:2017-10-28</time> <!-- not sure how datetime works -->
   </details>
-</footer>
+</div>
     
     
 </body>

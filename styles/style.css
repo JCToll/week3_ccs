@@ -1,7 +1,106 @@
-<style>
-/*   
-    */
+ 
+    h1 {
+        color: darkblue;
+        background-color: gainsboro;
+        font-family: Verdana, Helvetica, FreeSans, sans-serif ;
+        font-size: 2.0em ; 
+        font-variant-caps : small-caps ;
+        }
+    h2,h3,h4  {
+        font-family: Verdana, Helvetica, FreeSans, sans-serif; 
+        font: bold ;
+        color: darkblue;
+        font-size : 1.0em ;
+        }
+    /* set p font to smaller - my preference */
+    p {   
+        font-family: Verdana, Helvetica, FreeSans, sans-serif ;
+        font-size: 0.8em; 
+      }
+    /* for specific p, define the nominal font size -  */
+    p.nominal {
+        font-family: Verdana, Helvetica, FreeSans, sans-serif ;
+        font-size: 1em; 
+    }
+    
+    /* unvisited link */
+    a:link {
+      color: blue;
+    }
 
+    /* visited link */
+    a:visited {
+      color: dimgray;
+      text-decoration: none;   
+    }
 
+    a:hover {  
+        color: red;
+        font-size: 1.5em;
+        background-color : yellow;
+    }
 
-</sylte>
+    /* Try setting up a "box mode" to make the "aside" element stand-out */
+    .asidebox {
+      height: auto;
+      width: 35%;
+      padding: 2em ;
+      border: darkslateblue 3px solid ;
+      border-radius: 5px; 
+      background-color : lightgrey;
+      margin-left : auto;
+      margin-right: auto; 
+      align-content: center; 
+      font-family: Verdana, Helvetica, FreeSans, sans-serif ;
+      font-size : 0.75em;
+      float: right; 
+    }
+    
+    /* These CSS elements are used to create a horizontal menu bar to appear at the top in <nav>
+        Only apply this to class "nav"   */
+    /* First, remove the bullets and the margins and padding from the menu ul list */
+    ul.nav {
+      list-style-type: none;  /* removes the bullets */
+      margin: 0;  /* margin & padding=0  removes the extra space around the lis */
+      padding: 0;
+      overflow: hidden;
+      background-color: steelblue;
+      font-family: Verdana, Helvetica, FreeSans, sans-serif ;
+    }
+    
+    li.nav { 
+        float: left;
+        border-right: 3px solid gray ;  /* add a border to the entries to separate them */
+    }
+    
+    li.nav a {
+       display: block ;
+        color: white ; 
+        text-align: center ;
+        padding: 14px 16px ;
+        text-decoration: none ;
+    }
+    /* Change the link color to #111 (black) on hover if .active not instantiated*/
+    li.nav a:hover:not(.active) {
+      background-color: gray; 
+    }
+    /* Change color of active link to gray to let users know which page they are on */
+    .active {
+    background-color: #4CAF50;
+    }
+    
+    img {
+      float: left;
+      margin: 0 0 10px 10px;
+    }
+  .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      border-top: 4px ;
+      width: 100%;
+      background-color: lightgray;
+      color: gray;
+      text-align: center;
+      }
+    
